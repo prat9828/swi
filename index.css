@@ -1,0 +1,100 @@
+body{
+    margin: 0; 
+    min-height: 100vh; 
+    background-image: url('img/background.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    font-family: Arial, sans-serif;
+  }
+
+  .container1{
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card{
+    z-index: 0;
+    padding: 15px;
+    height: 91%;
+    width: 40%;
+    border-radius: 10%;
+    box-shadow: 4px 4px 50px black;
+    text-align: center;
+  }
+  .create{
+    text-align: center;
+    color: white;
+  }
+  input{
+    margin-bottom: 2%;
+    width: 100%;
+    height: 8%;
+    border-radius: 25px;
+  }
+  input::placeholder{
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  label{
+    font-size: 1.3rem;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+  }
+  .signup{
+    height: 7%;
+    width: 25%;
+    background-color: rgb(45, 118, 45);
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 25px;
+  }
+
+  .card:hover{
+    background-color: rgb(76, 147, 76);
+    color: white;
+    label{
+        color: white;
+    }
+    button{
+        background-color: white;
+        color: rgb(76, 147, 76);
+    }
+    button:hover{
+        background-color: rgb(45, 118, 45);
+        color: white;
+        cursor: pointer;
+      }
+  }
+  #otp{
+    width: 100%;
+
+  }
+  .verification{
+    height: 4%;
+    border-radius: 15px;
+  }
+
+  .createback{
+    height: 13.2%;
+    width: 41.9%;
+    z-index: 0;
+    background-color:rgb(76, 147, 76);
+    position: absolute;
+    top: 2.4%;
+    border-top-left-radius: 62px;
+    border-top-right-radius: 62px;
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      background-size: contain;
+      background-position: top;
+    }
+  }
+  

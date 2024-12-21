@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Smart Waste Identifier</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container1">
+        <div class="createback"></div>
+        <div class="card">
+            <h1 class="create">Create an Account</h1><hr>
+            <label for="email">Email Address</label><br>
+            <input type="email" placeholder="abcd123@gmail.com" id="email">
+            <br><br>
+            <label for="otp">Enter Verification Code</label><br>
+            <input type="number" placeholder="OTP : 123456 " id="otp"><br><br>
+            <button class="verification" type="button" onclick="sendVerificationCode()">Send Verification Code</button><br><br>
+            <label for="pass">Create Password</label><br>
+            <input type="password" placeholder="Abc1234" id="pass"><br><br>
+            <label for="pass2">Confirm Password</label><br>
+            <input type="password" placeholder="Re-enter" id="pass2"><br><br>
+            <button class="signup" onclick="return validateForm()">Signup</button>
+        </div>
+        
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
